@@ -11,7 +11,7 @@ const form = useForm({
     mobile: '',
     password: '',
 })
-
+ 
 const submitForm = () => {
     if(form.name==''){
    alert('Name is required');
