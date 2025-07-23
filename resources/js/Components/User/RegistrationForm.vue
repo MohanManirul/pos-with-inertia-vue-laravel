@@ -2,7 +2,7 @@
 import { useForm } from '@inertiajs/vue3';
 import { usePage } from '@inertiajs/vue3';
 import { router } from '@inertiajs/vue3';
-
+import { Link } from '@inertiajs/vue3';
 const page = usePage();
 
 const form = useForm({
@@ -73,6 +73,11 @@ const submitForm = () => {
         class="w-full bg-indigo-500 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300"
         >Register</button>
     </form>
+
+     <div class="mt-6 text-center text-sm text-gray-600">
+      Wait ! I've an account
+      <Link href="/" class="text-indigo-600 hover:text-indigo-500 font-medium">Sign In</Link>      
+    </div>
   </div>
 
 </template>
